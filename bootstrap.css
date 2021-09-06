@@ -4448,6 +4448,9 @@ textarea.form-control-lg {
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4533,11 +4536,6 @@ textarea.form-control-lg {
   left: 0;
   padding: 1rem;
   border-radius: calc(0.25rem - 1px);
-}
-
-.card-img
-{
-  filter: brightness(40%);
 }
 
 .card-img,
