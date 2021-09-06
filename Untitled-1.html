@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <style>
+            footer {
+
+position: fixed;
+/* position: sticky; */
+padding: 10px 0;
+text-align: center;
+bottom: 0;
+background-color: #101010;
+color: #9d9d9d;
+width: 100%;
+}
+.panel-margin {
+margin-top: 80px;
+margin-bottom: 80px;
+margin-left:35%;
+margin-right:35%;
+}
+        </style>
+        
+    </head>
+    <body>
+        <nav class="nav navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="login.html" class="navbar-brand">Team 2 & co</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Registration.html"><span class="glyphicon glyphicon-user"></span> Registration</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container panel-margin col-xs-4">
+            <div class="panel panel-default panel-primary">
+                <div class="panel-heading">
+                    <h2 class="panel-title">LOGIN</h2>
+                </div>
+                <div class="panel-body">
+                    <i class="text-warning">Login to Register</i>
+                    <form>
+                        
+                        <div class="form-group">
+                            <input type="Name"  class="form-control" placeholder="User Name" name="Name"  required = "true" pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password(Min. 8characters)" pattern=".{8,}" name="password" required = "true">
+                        </div>
+                        
+                       
+                        <a class="btn btn-primary" href="Registration.html" role="button"><b>Submit</b></a>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                Copyright <span class="glyphicon glyphicon-copyright-mark"></span> Team 2 & co.
+                All Rights Reserved | Contact Us: +91 90000 00000
+            </div>
+        </footer>
+        
+            
+        
+        <script>
+            function check() {
+            
+            var myInput = document.getElementById("Password");
+              
+            if(myInput.value.length <= 8) {
+                alert("Password should be atleast 8 characters");
+              }
+            else if (!document.getElementById('Terms').checked) {
+                         alert("Terms not ticked, By clicking 'ok' it will automatically get ticked and accepted");
+                         alert("Form Submitted");
+                    } 
+            
+            else {
+                       alert("Form Submitted");
+                 }
+            
+            
+            
+             }
+            </script>
+            
+            
+                  
+                        
+                        
+                    
+            
+
+       
+    </body>
+</html>
