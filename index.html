@@ -57,32 +57,36 @@
     </nav>
 
 
-    <div class="container panel-margin col-xs-4">
-        <div class="panel panel-default panel-primary login-box">
-            <div class="panel-heading">
-                <h2 class="panel-title">LOGIN</h2>
+    <div class="container panel-margin col-xs-4 ">
+        <div class="login-box-outline" style="max-width: 300px;">
+            <div class="panel-heading login-box">
+                <h2 class="panel-title text-center ">LOGIN</h2>
             </div>
-            <div class="panel-body">
+            <div class="panel-body ">
                 <i class="text-warning">Login to Register</i>
+                <br>
                 <form>
 
                     <div class="form-group">
-                        <input type="Name" class="form-control" placeholder="User Name" name="Name" required="true"
-                            pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$">
+                        <input type="text" id="usrname" class="form-control" placeholder="User Name" name="Name" required
+                            pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" >
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password(Min. 8characters)"
-                            pattern=".{8,}" name="password" required="true">
+                        <input type="password" class="form-control"
+                        id="pswd" placeholder="Password(Min. 8characters)"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                     </div>
 
-
-                    <a class="btn btn-primary" href="./registration.html" role="button"><b>Submit</b></a>
+                    <div class="text-center">
+                        <input  class="btn btn-primary login-box " type="submit" value="Submit" role="button" onclick="validate()">
+                    </div>
+                
                 </form>
             </div>
-
+            
         </div>
     </div>
-    <footer>
+    <footer id="index-footer">
         <div class="container">
             Copyright <span class="glyphicon glyphicon-copyright-mark"></span> Team 2 & co.
             All Rights Reserved | Contact Us: +91 90000 00000
@@ -105,9 +109,22 @@
                 alert("Form Submitted");
             }
 
-
-
+    
         }
+        function validate()
+            {
+                let uName= document.getElementById("usrname").value;
+                let uPwd= document.getElementById("pswd").value;
+                if(uName==="admin" && uPwd==="1234567890")
+                {
+                    window.location= "registration.html"
+                }
+                else
+                {
+                    alert("Wrong Username or Password!");
+                }
+                
+            }
     </script>
 
 

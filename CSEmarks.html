@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> CSEMarks </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-        <link rel="stylesheet" href="bootstrap.css"/>
-    </head>
-    <body style="margin: 0%; padding: 0%;">
-        <div class="jumbotron jumbotron-fluid" style="background-color: rgb(218, 218, 218); margin: 0%; padding: 5%;">
-            <div class="container">
-              <h1 class="display-4" style="text-align: center;">Computer Science and Engineering</h1>
-              <p class="lead" style="text-align: center; font-size: 120%; color: gray; font-weight: bolder;" > Please enter your score (out of 100) for each subject</p>
-            </div>
-          </div>
-          <div style="padding: 5%; margin-bottom: 5%; text-align: center; justify-content: center;">
-          <table class="table" style="margin-left: auto; margin-right: auto;">
-            <thead>
-              <tr>
-                <th scope="col"> Serial Number</th>
-                <th scope="col">Subject</th>
-                <th scope="col">Marks</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td> Data Structures</td>
-                <td> <input type="number" class="submarks verify" onchange="return marksofSub()" id="verify" placeholder="Enter score" required>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td> Object Oriented Programming</td>
-                <td> <input type="number" class="submarks verify" onchange="return marksofSub()" id="verify" placeholder="Enter score" required>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td> Networks and Services </td>
-                <td> <input type="number" class="submarks verify" onchange="return marksofSub()" id="verify" placeholder="Enter score" required>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td> Database Management Systems </td>
-                <td> <input type="number" class="submarks verify" onchange="return marksofSub()" id="verify" placeholder="Enter score" required>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td> Computer Hardware Fundamentals </td>
-                <td> <input type="number" class="submarks verify" onchange="return marksofSub()" id="verify" placeholder="Enter score" required> 
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p style="text-align: center; color: red;"> Note: Please recheck your score in each subject before moving on to the next step.</p>
-        <div class="d-grid gap-2 col-3 mx-auto" style="padding-top: 0%; padding-bottom: 5%;">
-          <a href="shop.html" class="btn btn-primary"> CLICK TO VIEW SCORECHART</a>
-        </div>
-          <script src="./marks.js"> </script>
-    </body>
+
+<head>
+  <title> CSEMarks </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" <link rel="stylesheet"
+    href="style.css" type="text/css" />
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="margin: 0%; padding: 0%;">
+  <nav>
+    <div>
+      Team 2
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid" style="background-color: rgb(218, 218, 218); margin: 0%; padding: 5%;">
+    <div class="container">
+      <h1 class="display-4" style="text-align: center;">Computer Science and Engineering</h1>
+      <p class="lead" style="text-align: center; font-size: 120%; color: gray; font-weight: bolder;"> Please enter your
+        score (out of 100) for each subject</p>
+    </div>
+  </div>
+  <div style="padding: 5%; margin-bottom: 5%; text-align: center; justify-content: center;">
+    <table class="table" style="margin-left: auto; margin-right: auto;">
+      <thead>
+        <tr>
+          <th scope="col"> Serial Number</th>
+          <th scope="col">Subject</th>
+          <th scope="col">Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td> Data Structures</td>
+          <td> <input type="number" class="submarks verify"  id="sub1"
+              placeholder="Enter score" required>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td> Object Oriented Programming</td>
+          <td> <input type="number" class="submarks verify"  id="sub2"
+              placeholder="Enter score" required>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td> Networks and Services </td>
+          <td> <input type="number" class="submarks verify"  id="sub3"
+              placeholder="Enter score" required>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td> Database Management Systems </td>
+          <td> <input type="number" class="submarks verify"  id="sub4"
+              placeholder="Enter score" required>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td> Computer Hardware Fundamentals </td>
+          <td> <input type="number" class="submarks verify"  id="sub5"
+              placeholder="Enter score" required>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="text-align: center; color: red;"> Note: Please recheck your score in each subject before moving on to the
+    next step.</p>
+  <div class="d-grid gap-2 col-3 mx-auto" style="padding-top: 0%; padding-bottom: 5%;">
+    <button onclick="marksofSub()" class="btn btn-primary login-box login-box-outline-light"> CLICK TO VIEW SCORECHART</button>
+    
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright <span class="glyphicon glyphicon-copyright-mark"></span> Team 2 & co.
+      All Rights Reserved | Contact Us: +91 90000 00000
+    </div>
+  </footer>
+
+
+
+  <script src="./marks.js"> </script>
+</body>
