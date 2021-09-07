@@ -14,3 +14,20 @@ nav{
 nav div {
   text-align: center;
 }
+
+
+
+
+/* Footer */
+
+footer {
+
+  position: fixed;
+  /* position: sticky; */
+  padding: 3rem 2rem;
+  text-align: center;
+  bottom: 0;
+  background-color: #101010;
+  color: #9d9d9d;
+  width: 100%;
+}

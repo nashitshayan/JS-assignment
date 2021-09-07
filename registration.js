@@ -31,7 +31,7 @@ function checkfun(){
             document.getElementById("streamspan").textContent ="** Please Select A Stream";
         }
         else if (stream == "2") {
-            window.location = "CSEMarks.html";
+            window.location = "CSEmarks.html";
         }
         else if(stream == "3" ){
             window.location = "ECEmarks.html";
